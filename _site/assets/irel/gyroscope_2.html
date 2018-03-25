@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Gyroscope pers.</title>
+	<style>
+	body { margin: 0; 
+		font-family: arial;
+		background-color: #fff;}
+		canvas { width: 100%; height: 100% }
+
+			#poo {
+			position: absolute;
+			color: white;
+			background-color: none;
+			width: 200px;
+			height: 50px;
+			text-align: left;
+			font-family: arial;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<div id = "poo"> Best viewed on mobile or devices with device orientation feedback </div>
+
+		<script src="js/three.min.js"></script>
+
+		<script src="js/controls/DeviceOrientationControls.js"></script>
+
+		<script>
+
+		var camera, scene;
+
+		
+
+
+		init();
+		animate();
+		
+
+		function init() {
+
+
+
+
+			scene = new THREE.Scene();
+
+			scene.fog = new THREE.FogExp2( 0xffffff, 0.002 );
+
+			
+
+			camera = new THREE.PerspectiveCamera( 85, window.innerWidth / window.innerHeight, 1, 8000 );
+
+			controls = new THREE.DeviceOrientationControls( camera );
+
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+			renderer.setClearColor( 0xffffff );
+
+
+			for ( var i = 0; i < 2000; i ++ ) {
+
+				radii = ( Math.random() - 5 ) * 20;
+				radii2 = ( Math.random() - 5 ) * 20;
+				radii3 = ( Math.random() - 5 ) * 20;
+
+				var geometry = new THREE.BoxGeometry( radii, radii2, radii3);
+
+
+				var material =  new THREE.MeshBasicMaterial( { color:0x2d2d2d } );
+
+				var mesh = new THREE.Mesh( geometry, material );
+				mesh.position.x = ( Math.random() - 0.5 ) * 3000;
+				mesh.position.y = ( Math.random() - 0.5 ) * 3000;
+				mesh.position.z = ( Math.random() - 0.5 ) * 3000;
+
+
+				mesh.updateMatrix();
+				mesh.matrixAutoUpdate = false;
+				scene.add( mesh );
+			}
+		}
+
+
+
+		function render() {	
+
+			renderer.render( scene, camera );
+
+		}
+
+		function animate() {
+			requestAnimationFrame( animate );
+
+			controls.update();
+
+			render();
+
+		}
+
+
+		</script>
+	</body>
+	</html>
