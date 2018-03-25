@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h3>{{ page.info }}</h3>
+    <h4>{% for category in page.categories %}
+    {{ category }}
+    {% endfor %}</h4>
+
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ page.date | date: date_format }}
+      </time>
+      
+  </header>
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+{{ content }}
+
+{% capture allimgs %}{{ page.allimages }}{% endcapture %}
+
+{% for image in site.static_files %}
+  {% if image.path contains allimgs %}
+    <img class="post-images" src="{{ image.path }}" alt="">
+  {% endif %}
+{% endfor %}
+
+
+
+
+
+<!-- _____________________ -->
+<h1 class="more" itemprop="name headline" style="padding-top: 100px; text-align: center;"">More projects</h1>
+
+
+ {% if site.posts.size > 0 %}
+    
+    <ul class="post-list">
+      {% for post in site.posts %}
+      
+      {% include post-preview.html %}
+     
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+

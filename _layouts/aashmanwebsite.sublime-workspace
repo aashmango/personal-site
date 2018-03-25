@@ -1,0 +1,457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/aashmac/agoghari.github.io/_sass/minima/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 4315,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aashmac/agoghari.github.io/_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 1594,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/aashmac/agoghari.github.io/_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 509,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "default.html",
+			"settings":
+			{
+				"buffer_size": 347,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home.html",
+			"settings":
+			{
+				"buffer_size": 862,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "post.html",
+			"settings":
+			{
+				"buffer_size": 807,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aashmac/agoghari.github.io",
+		"/Users/aashmac/agoghari.github.io/_includes",
+		"/Users/aashmac/agoghari.github.io/_layouts",
+		"/Users/aashmac/agoghari.github.io/_posts",
+		"/Users/aashmac/agoghari.github.io/_sass",
+		"/Users/aashmac/agoghari.github.io/_sass/minima",
+		"/Users/aashmac/agoghari.github.io/assets",
+		"/Users/aashmac/agoghari.github.io/assets/posts",
+		"/Users/aashmac/agoghari.github.io/assets/posts/2018-02-26-first-post"
+	],
+	"file_history":
+	[
+		"/Users/aashmac/agoghari.github.io/_includes/head.html",
+		"/Users/aashmac/agoghari.github.io/_sass/minima/_base.scss",
+		"/Users/aashmac/agoghari.github.io/_sass/minima/_layout.scss",
+		"/Users/aashmac/agoghari.github.io/_posts/2018-02-26-first-post.markdown",
+		"/Users/aashmac/agoghari.github.io/_posts/2018-02-26-bloggodoggo.markdown",
+		"/Users/aashmac/agoghari.github.io/_layouts/post.html",
+		"/Users/aashmac/agoghari.github.io/_layouts/home.html",
+		"/Users/aashmac/agoghari.github.io/_includes/header.html",
+		"/Users/aashmac/agoghari.github.io/_sass/minima.scss",
+		"/Users/aashmac/agoghari.github.io/_layouts/default.html",
+		"/Users/aashmac/agoghari.github.io/_config.yml",
+		"/Users/aashmac/agoghari.github.io/index.md",
+		"/Users/aashmac/agoghari.github.io/_layouts/page.html",
+		"/Users/aashmac/agoghari.github.io/_layouts/home_backup.html",
+		"/Users/aashmac/agoghari.github.io/_posts/2018-02-26-welcome-to-jekyll.markdown",
+		"/Users/aashmac/agoghari.github.io/about.md",
+		"/Users/aashmac/agoghari.github.io/Gemfile",
+		"/Users/aashmac/agoghari.github.io/_includes/image",
+		"/Users/aashmac/agoghari.github.io/_includes/image.html",
+		"/Users/aashmac/formlabs-web-frontend/stories/cellUI.js",
+		"/Users/aashmac/Downloads/Wash - 20x30.svg",
+		"/Users/aashmac/Documents/Kirby_test/assets/scss/_components.scss",
+		"/Users/aashmac/Documents/Kirby_test/assets/scss/_custom.scss",
+		"/Users/aashmac/Documents/Kirby_test/assets/scss/default.scss",
+		"/Users/aashmac/Documents/Kirby_test/site/blueprints/home2.yml",
+		"/Users/aashmac/Documents/Kirby_test/site/config/config.php",
+		"/Users/aashmac/Documents/Kirby_test/site/templates/home2.php",
+		"/Users/aashmac/Documents/Kirby_test/site/fields/color/assets/css/color.css",
+		"/Users/aashmac/Documents/Kirby_test/assets/css/default.css",
+		"/Users/aashmac/Documents/Kirby_test/content/home/home2.txt",
+		"/Users/aashmac/Documents/Kirby_test/site/blueprints/home.yml",
+		"/Users/aashmac/Documents/Kirby_test/site/blueprints/project.yml",
+		"/Users/aashmac/Documents/Kirby_test/site/blueprints/projects.yml",
+		"/Users/aashmac/Documents/Kirby_test/site/templates/home2",
+		"/Users/aashmac/Documents/Kirby_test/readme.md",
+		"/Users/aashmac/Downloads/kirby-2.5.5/readme.md",
+		"/Users/aashmac/Documents/Face Art Project/getimages.html",
+		"/Users/aashmac/Documents/Face Art Project/PaintingsByArtist_Picasso.json"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"wrapper",
+			"excerpt",
+			"@media",
+			"480px",
+			"resize",
+			"mobile",
+			"media",
+			"float",
+			"sp2",
+			"my_data",
+			"mydata"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/aashmac/agoghari.github.io/_sass/minima/_layout.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4315,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/aashmac/agoghari.github.io/_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/aashmac/agoghari.github.io/_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								564,
+								564
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								726,
+								726
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "aashmanwebsite.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 311.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

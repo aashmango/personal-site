@@ -1,0 +1,31 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img class="homeicon" src="/assets/homeicon.svg"></a>
+
+    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
+
+    <a class="site-nav" rel="author" href="/about">???</a>
+
+  </div>
+
+
+
+</header>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("filter");
+var btns = header.getElementsByClassName("btn");
+console.log(btns);
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+

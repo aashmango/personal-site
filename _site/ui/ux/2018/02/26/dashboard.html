@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<canvas id="thecanvas" resize> </canvas>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>3D Print Dashboard | Aashman Goghari</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="3D Print Dashboard" />
+<meta name="author" content="Personal Website" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. WHY IS THIS NOT WORKING. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated." />
+<meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. WHY IS THIS NOT WORKING. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated." />
+<link rel="canonical" href="http://localhost:4000/ui/ux/2018/02/26/dashboard.html" />
+<meta property="og:url" content="http://localhost:4000/ui/ux/2018/02/26/dashboard.html" />
+<meta property="og:site_name" content="Aashman Goghari" />
+<meta property="og:image" content="http://localhost:4000/assets/homepage_images/dashboard.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-02-26T15:20:19-05:00" />
+<script type="application/ld+json">
+{"headline":"3D Print Dashboard","dateModified":"2018-02-26T15:20:19-05:00","datePublished":"2018-02-26T15:20:19-05:00","author":{"@type":"Person","name":"Personal Website"},"description":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. WHY IS THIS NOT WORKING. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.","image":"http://localhost:4000/assets/homepage_images/dashboard.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ui/ux/2018/02/26/dashboard.html"},"@type":"BlogPosting","url":"http://localhost:4000/ui/ux/2018/02/26/dashboard.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Aashman Goghari" />
+  
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+
+ <!--   <script type="text/javascript" src="/assets/js/paper-full.js"></script>
+
+<script type="text/paperscript" src="/assets/polygons.js" canvas="thecanvas"></script> -->
+
+
+</head>
+
+
+  <body>
+   
+
+   <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a>
+
+    <!-- <a class="site-title" rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
+
+    <a class="site-nav" rel="author" href="/about">???</a>
+
+  </div>
+
+
+
+</header>
+
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("filter");
+var btns = header.getElementsByClassName("btn");
+console.log(btns);
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+    <img class = "splash" src="" alt="" title="">
+
+     
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">3D Print Dashboard</h1>
+    <h3>Web-based dashboard for 3D print management</h3>
+    <h4>
+    UI/UX
+    </h4>
+
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-02-26T15:20:19-05:00" itemprop="datePublished">
+        
+        Feb 26, 2018
+      </time>
+      
+  </header>
+
+  <a class="u-url" href="/ui/ux/2018/02/26/dashboard.html" hidden></a>
+</article>
+
+<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. WHY IS THIS NOT WORKING. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+
+
+
+
+  
+    <img class="post-images" src="/README.md" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/blobs.js" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homeicon.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/15a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/5a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/authorship-2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/authorship.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/balance.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/city.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/concrete.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/dashboard.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/linabo.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/maps.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/pavilion.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/pens.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/suleymaniye.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/homepage_images/wrap.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/3.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/6.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/7.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/1.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/2.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/3" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/3.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/4.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/5.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/6.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/Psd/7.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/1.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/2.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/3.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/3.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/4.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/5.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/6.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/6.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/7.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/hover/7.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/1.5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/1.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/2.5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/3.5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/3.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/4.5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/4.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/5.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/GR.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/arrow.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/bg.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/browser.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/browser.psd" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/endbg-01.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/folks.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/gfd.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/gref.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/grf.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/logo.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/no.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/phone.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/ref.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/main/tegrf .svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/nav1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/gumroad/nav2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/3.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/6.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/hungry/7.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/behance.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/behance.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/bg.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/bg.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/bg_2.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/linkedin.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/linkedin.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/vimeo.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/mainpage/vimeo.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/10.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/10a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/11.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/11a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/12.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/12a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/13.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/13a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/14.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/14a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/15.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/15a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/16.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/16a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/1a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/2a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/3.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/3a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/4a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/5a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/6.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/6a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/7.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/7a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/8.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/8a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/9.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/9a.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/test1.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/newgrid/test2.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_11.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_12.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_13.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_14.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_3.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_7.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_8.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/archived_projects/urban/ud_9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/centroid/9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/city/1.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/city/2.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/city/3.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/city/4.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/city/5.gif" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/computing/cropbg.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/computing/fullres.pdf" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/computing/fullres.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/computing/thumb.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/2.5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/concrete/9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/linabo/1.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/linabo/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/linabo/3.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/linabo/4.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/linabo/5.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/linabo/6.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/6.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pavilion/cover.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/pens/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/suleymaniye/diag.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/suleymaniye/heading.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/suleymaniye/sinan.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-1 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-10 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-100 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-101 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-102 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-103 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-104 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-105 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-106 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-107 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-108 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-11 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-12 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-13 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-14 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-15 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-16 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-17 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-18 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-19 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-2 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-20 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-21 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-22 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-23 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-24 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-25 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-26 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-27 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-28 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-29 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-3 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-30 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-31 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-32 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-33 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-34 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-35 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-36 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-37 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-38 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-39 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-4 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-40 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-41 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-42 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-43 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-44 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-45 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-46 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-47 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-48 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-49 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-5 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-50 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-51 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-52 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-53 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-54 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-55 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-56 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-57 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-58 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-59 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-6 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-60 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-61 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-62 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-63 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-64 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-65 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-66 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-67 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-68 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-69 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-7 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-70 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-71 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-72 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-73 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-74 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-75 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-76 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-77 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-78 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-79 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-8 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-80 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-81 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-82 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-83 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-84 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-85 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-86 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-87 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-88 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-89 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-9 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-90 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-91 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-92 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-93 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-94 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-95 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-96 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-97 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-98 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/book/book_2_v04-99 copy.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/0.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/11.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/12.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/13.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/14.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/15.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/16.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/17.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/18.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/19.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/20.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/21.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/22.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/23.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/24.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/25.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/26.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/27.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/28.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/29.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/30.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img11.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img12.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img13.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img14.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img15.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img16.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img17.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img18.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img19.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img20.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img21.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img22.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img23.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img24.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img25.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img26.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img27.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img28.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img29.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img30.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img31.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/compressed/img9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/0.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/11.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/12.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/13.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/14.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/15.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/16.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/17.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/18.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/19.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/20.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/21.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/22.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/23.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/24.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/25.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/26.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/27.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/28.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/29.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/30.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/0.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/11.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/12.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/13.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/14.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/15.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/16.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/17.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/18.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/19.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/20.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/21.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/22.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/23.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/24.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/25.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/26.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/27.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/28.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/29.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/30.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/debris/compressed/9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img10.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img11.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img12.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img13.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img14.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img15.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img16.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img17.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img18.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img19.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img20.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img21.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img22.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img23.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img24.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img25.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img26.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img27.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img28.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img29.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img30.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img31.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/drawings/img9.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/thesis/thumb.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/12.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/3.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/6.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/7-01.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/7-02.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/wa/7-03.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/1.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/2.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/3.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/4.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/5.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/7.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/8TH SCALE PLAN [Converted] (1)-01.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather1/white bg weather-04.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/10.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/11.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/2.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/3.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/4.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/5.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/6.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/7.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/8.jpg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/images/weather2/9.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/js/paper-full.js" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/minima-social-icons.svg" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/posts/2018-02-26-first-post/linkedin-before.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/posts/2018-02-26-first-post/linkedin-before1.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/posts/2018-02-26-first-post/pens.png" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/city/1.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/city/2.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/city/3.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/city/4.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/maps/1.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/maps/3.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/maps/bes.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/maps/tes.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/misc/MinorRightAvians.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/misc/MinorRightAvians_1.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/misc/OilyFreshHairstreakbutterfly.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/misc/OrderlyBrokenJenny.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/misc/OrderlyBrokenJenny_1.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/misc/WhisperedDifferentAnaconda.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/pavilion/packing.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/pavilion/pavillion2.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/pavilion/pavillion3.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/pens/pen-loft-web-crop.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/pens/pen-options-crop.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/pens/slicer.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/1.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/10.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/2.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/3.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/4.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/5.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/6.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/7.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/8.mp4" alt="">
+  
+
+  
+    <img class="post-images" src="/assets/video/wrap/9.mp4" alt="">
+  
+
+
+
+
+
+
+<!-- _____________________ -->
+<h1 class="more" itemprop="name headline" style="padding-top: 100px; text-align: center;"">More projects</h1>
+
+
+ 
+    
+    <ul class="post-list">
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/ui/ux/2018/02/26/dashboard.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/dashboard.png" alt="3D Print Dashboard" title="3D Print Dashboard">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/ui/ux/2018/02/26/dashboard.html">
+              3D Print Dashboard
+              </span>
+            </h2>
+            <span class="post-category">
+            UI/UX
+            </span> 
+            <h4>Web-based dashboard for 3D print management </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/3d%20printing%20%7C/parametric%20design%20%7C/3d%20design/2018/02/26/parametric-pens.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/pens.png" alt="Parametric Pens" title="Parametric Pens">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/3d%20printing%20%7C/parametric%20design%20%7C/3d%20design/2018/02/26/parametric-pens.html">
+              Parametric Pens
+              </span>
+            </h2>
+            <span class="post-category">
+            3D Printing |
+            
+            Parametric Design |
+            
+            3D Design
+            </span> 
+            <h4>600 unique 3D-printed pens, parametrically generated in 3D CAD </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/parametric%20design%20%7C/3d%20printing/2018/02/26/fuse-pavilion.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/pavilion.png" alt="FUSE Pavilion" title="FUSE Pavilion">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/parametric%20design%20%7C/3d%20printing/2018/02/26/fuse-pavilion.html">
+              FUSE Pavilion
+              </span>
+            </h2>
+            <span class="post-category">
+            Parametric Design |
+            
+            3D Printing
+            </span> 
+            <h4>A pavilion build with 3D printed nodes for an event at the MIT Media Lab. </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/web%20experiment/2018/02/26/urban-collage.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/maps.png" alt="Urban Collage" title="Urban Collage">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/web%20experiment/2018/02/26/urban-collage.html">
+              Urban Collage
+              </span>
+            </h2>
+            <span class="post-category">
+            Web experiment
+            </span> 
+            <h4>A browser based experiment with animating and collaging Google maps. </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/web%20experiment/2018/02/26/city.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/city.png" alt="City Pulse" title="City Pulse">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/web%20experiment/2018/02/26/city.html">
+              City Pulse
+              </span>
+            </h2>
+            <span class="post-category">
+            Web Experiment
+            </span> 
+            <h4>Web-based interactive cityscape </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis-2.html">
+
+           <div id="cropper">
+        <img src="/assets/images/thesis/thumb.png" alt="Distributed Authorship" title="Distributed Authorship">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis-2.html">
+              Distributed Authorship
+              </span>
+            </h2>
+            <span class="post-category">
+            Drawing |
+            
+            Computation |
+            
+            Writing
+            </span> 
+            <h4>Exploring architectural authorship through digital and analog drawing </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/authorship.png" alt="Computational Debris" title="Computational Debris">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis.html">
+              Computational Debris
+              </span>
+            </h2>
+            <span class="post-category">
+            Drawing |
+            
+            Computation |
+            
+            Writing
+            </span> 
+            <h4>Part 2 of distributed authorship </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/drawing%20%7C/computation%20%7C/writing/2018/02/26/drawing-computation.html">
+
+           <div id="cropper">
+        <img src="/assets/images/computing/thumb.png" alt="Drawing Computation" title="Drawing Computation">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/drawing%20%7C/computation%20%7C/writing/2018/02/26/drawing-computation.html">
+              Drawing Computation
+              </span>
+            </h2>
+            <span class="post-category">
+            Drawing |
+            
+            Computation |
+            
+            Writing
+            </span> 
+            <h4>Using pen-plotting and python to make computational drawings </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/graphic%20design%20%7C/architectural%20drawing/2018/02/26/suleymaniye.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/suleymaniye.png" alt="Centroid" title="Centroid">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/graphic%20design%20%7C/architectural%20drawing/2018/02/26/suleymaniye.html">
+              Centroid
+              </span>
+            </h2>
+            <span class="post-category">
+            Graphic Design |
+            
+            Architectural Drawing
+            </span> 
+            <h4>Laser cutting stuff </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+      
+      <li>
+        
+        <a class = "thumbhover" href="/3d%20design%20%7C/digital%20fabrication/2016/02/26/fiber-wrap.html">
+
+           <div id="cropper">
+        <img src="/assets/homepage_images/wrap.png" alt="Fiber Wrap" title="Fiber Wrap">
+        </div>
+          <div class = text-info>           
+            <h2>
+              <span class="post-link" href="/3d%20design%20%7C/digital%20fabrication/2016/02/26/fiber-wrap.html">
+              Fiber Wrap
+              </span>
+            </h2>
+            <span class="post-category">
+            3D Design |
+            
+            Digital Fabrication
+            </span> 
+            <h4>A small exploration into the possible uses of robotically controlled fiber wrapping techniques </h4>
+          </div>
+          
+         </a>
+      </li>
+     
+      
+    </ul>
+
+  
+
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Aashman Goghari</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            
+              Personal Website
+            
+            </li>
+            
+            <li><a class="u-email" href="mailto:aashman.g@gmail.com">aashman.g@gmail.com</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>This website is under development. </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

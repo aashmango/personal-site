@@ -1,0 +1,40 @@
+---
+layout: post
+identity: 1
+title:  "City Pulse"
+info: "Web-based interactive cityscape"
+date:   2018-02-26 15:20:19 -0500
+image: /assets/homepage_images/city.png
+headerimage: /assets/AgreeableInformalBasenji.gif
+allimages: /assets/images/thesis/debris/compressed/empty
+categories:
+- Web Experiment
+---
+
+This project explores the effect of a few simple computational paramenters on the generation of a virtual cityscape. Trigonometric functions control camera movement as well as the undulation of buildings, while the relative positions/dimensions are arbitrarily generated each time the webpage reloads. Built with the three.js library.
+
+
+<div>
+  <video autoPlay loop>
+    <source src="/assets/video/city/1.mp4" type="video/mp4"/>
+  </video>
+</div>
+
+<div>
+  <video autoPlay loop>
+    <source src="/assets/video/city/2.mp4" type="video/mp4"/>
+  </video>
+</div>
+
+<div>
+  <video autoPlay loop>
+    <source src="/assets/video/city/3.mp4" type="video/mp4"/>
+  </video>
+</div>
+
+<div>
+  <video autoPlay loop>
+    <source src="/assets/video/city/4.mp4" type="video/mp4"/>
+  </video>
+</div>
+

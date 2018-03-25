@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-25T16:27:44-04:00</updated><id>http://localhost:4000/</id><title type="html">Aashman Goghari</title><subtitle>This website is under development. </subtitle><author><name>Personal Website</name></author><entry><title type="html">3D Print Dashboard</title><link href="http://localhost:4000/ui/ux/2018/02/26/dashboard.html" rel="alternate" type="text/html" title="3D Print Dashboard" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/ui/ux/2018/02/26/dashboard</id><content type="html" xml:base="http://localhost:4000/ui/ux/2018/02/26/dashboard.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. WHY IS THIS NOT WORKING. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Personal Website</name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. WHY IS THIS NOT WORKING. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/dashboard.png" /></entry><entry><title type="html">Parametric Pens</title><link href="http://localhost:4000/3d%20printing%20%7C/parametric%20design%20%7C/3d%20design/2018/02/26/parametric-pens.html" rel="alternate" type="text/html" title="Parametric Pens" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/3d%20printing%20%7C/parametric%20design%20%7C/3d%20design/2018/02/26/parametric-pens</id><content type="html" xml:base="http://localhost:4000/3d%20printing%20%7C/parametric%20design%20%7C/3d%20design/2018/02/26/parametric-pens.html">&lt;p&gt;&lt;a href=&quot;https://formlabs.com/blog/parametric-design-customized-conference-swag/&quot; target=&quot;_blank&quot; class=&quot;bigbutton&quot;&gt;Go To Blog Post ➝&lt;/a&gt;&lt;/p&gt;</content><author><name>Personal Website</name></author><summary type="html">Go To Blog Post ➝</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/pens.png" /></entry><entry><title type="html">FUSE Pavilion</title><link href="http://localhost:4000/parametric%20design%20%7C/3d%20printing/2018/02/26/fuse-pavilion.html" rel="alternate" type="text/html" title="FUSE Pavilion" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/parametric%20design%20%7C/3d%20printing/2018/02/26/fuse-pavilion</id><content type="html" xml:base="http://localhost:4000/parametric%20design%20%7C/3d%20printing/2018/02/26/fuse-pavilion.html">&lt;p&gt;&lt;a href=&quot;https://formlabs.com/blog/parametric-design-customized-conference-swag/&quot; target=&quot;_blank&quot; class=&quot;bigbutton&quot;&gt;Go To Blog Post ➝&lt;/a&gt;&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/pavilion/packing.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/pavilion/pavillion2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/pavilion/pavillion3.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;</content><author><name>Personal Website</name></author><summary type="html">Go To Blog Post ➝</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/pavilion.png" /></entry><entry><title type="html">Urban Collage</title><link href="http://localhost:4000/web%20experiment/2018/02/26/urban-collage.html" rel="alternate" type="text/html" title="Urban Collage" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/web%20experiment/2018/02/26/urban-collage</id><content type="html" xml:base="http://localhost:4000/web%20experiment/2018/02/26/urban-collage.html">&lt;p&gt;This experiement juxtaposes sattelite imagery at different scales to create interesting web collages. Users can input any route they like and watch as the aerial camera slowly pans through it. Created with help from the Google Maps API.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/maps/1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/maps/tes.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/maps/3.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/maps/bes.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;</content><author><name>Personal Website</name></author><summary type="html">This experiement juxtaposes sattelite imagery at different scales to create interesting web collages. Users can input any route they like and watch as the aerial camera slowly pans through it. Created with help from the Google Maps API.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/maps.png" /></entry><entry><title type="html">City Pulse</title><link href="http://localhost:4000/web%20experiment/2018/02/26/city.html" rel="alternate" type="text/html" title="City Pulse" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/web%20experiment/2018/02/26/city</id><content type="html" xml:base="http://localhost:4000/web%20experiment/2018/02/26/city.html">&lt;p&gt;This project explores the effect of a few simple computational paramenters on the generation of a virtual cityscape. Trigonometric functions control camera movement as well as the undulation of buildings, while the relative positions/dimensions are arbitrarily generated each time the webpage reloads. Built with the three.js library.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/city/1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/city/2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/city/3.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/city/4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;</content><author><name>Personal Website</name></author><summary type="html">This project explores the effect of a few simple computational paramenters on the generation of a virtual cityscape. Trigonometric functions control camera movement as well as the undulation of buildings, while the relative positions/dimensions are arbitrarily generated each time the webpage reloads. Built with the three.js library.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/city.png" /></entry><entry><title type="html">Distributed Authorship</title><link href="http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis-2.html" rel="alternate" type="text/html" title="Distributed Authorship" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis-2</id><content type="html" xml:base="http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis-2.html"></content><author><name>Personal Website</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/thesis/thumb.png" /></entry><entry><title type="html">Computational Debris</title><link href="http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis.html" rel="alternate" type="text/html" title="Computational Debris" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis</id><content type="html" xml:base="http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/thesis.html"></content><author><name>Personal Website</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/authorship.png" /></entry><entry><title type="html">Drawing Computation</title><link href="http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/drawing-computation.html" rel="alternate" type="text/html" title="Drawing Computation" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/drawing-computation</id><content type="html" xml:base="http://localhost:4000/drawing%20%7C/computation%20%7C/writing/2018/02/26/drawing-computation.html">&lt;p&gt;This project is from an architectural studio devoted to exploring means of computational drawing within the realm of architecture. Concepts of organization, heirarchy and craft arise throughout this inquiry. The work is plotted on an 80’s pen plotter (CNC) which provides a manual vectorized quality otherwise unseen with conventional forms of production  (pixels + laser printing).&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;1080px&quot; src=&quot;https://www.yumpu.com/en/embed/view/r87bjyU0veAN42JY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; allowtransparency=&quot;true&quot;&gt;&lt;/iframe&gt;</content><author><name>Personal Website</name></author><summary type="html">This project is from an architectural studio devoted to exploring means of computational drawing within the realm of architecture. Concepts of organization, heirarchy and craft arise throughout this inquiry. The work is plotted on an 80’s pen plotter (CNC) which provides a manual vectorized quality otherwise unseen with conventional forms of production  (pixels + laser printing).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/computing/thumb.png" /></entry><entry><title type="html">Centroid</title><link href="http://localhost:4000/graphic%20design%20%7C/architectural%20drawing/2018/02/26/suleymaniye.html" rel="alternate" type="text/html" title="Centroid" /><published>2018-02-26T15:20:19-05:00</published><updated>2018-02-26T15:20:19-05:00</updated><id>http://localhost:4000/graphic%20design%20%7C/architectural%20drawing/2018/02/26/suleymaniye</id><content type="html" xml:base="http://localhost:4000/graphic%20design%20%7C/architectural%20drawing/2018/02/26/suleymaniye.html"></content><author><name>Personal Website</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/suleymaniye.png" /></entry><entry><title type="html">Fiber Wrap</title><link href="http://localhost:4000/3d%20design%20%7C/digital%20fabrication/2016/02/26/fiber-wrap.html" rel="alternate" type="text/html" title="Fiber Wrap" /><published>2016-02-26T15:20:19-05:00</published><updated>2016-02-26T15:20:19-05:00</updated><id>http://localhost:4000/3d%20design%20%7C/digital%20fabrication/2016/02/26/fiber-wrap</id><content type="html" xml:base="http://localhost:4000/3d%20design%20%7C/digital%20fabrication/2016/02/26/fiber-wrap.html">&lt;p&gt;A small exploration into the possible uses of robotically controlled fiber wrapping techniques. With the help of an ABB 6-axis robot arm, we were able to program paths that allow for the wrapping and potential weaving of fiber, which can be hardened during or post manufaturing with a resin coating to create shell structures.&lt;/p&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/3.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/4.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/5.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/6.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/7.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/8.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/9.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  &lt;video autoPlay=&quot;&quot; loop=&quot;&quot;&gt;
+    &lt;source src=&quot;/assets/video/wrap/10.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+&lt;/div&gt;</content><author><name>Personal Website</name></author><summary type="html">A small exploration into the possible uses of robotically controlled fiber wrapping techniques. With the help of an ABB 6-axis robot arm, we were able to program paths that allow for the wrapping and potential weaving of fiber, which can be hardened during or post manufaturing with a resin coating to create shell structures.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/homepage_images/wrap.png" /></entry></feed>
