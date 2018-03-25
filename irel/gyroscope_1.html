@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>Front / Back</title>
+	<style>
+	body { margin: 0; 
+		background-color: #fff;}
+		canvas { width: 100%; height: 100% }
+
+			#poo {
+			position: absolute;
+			color: white;
+			background-color: none;
+			width: 200px;
+			height: 50px;
+			text-align: left;
+			font-family: arial;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id = "poo"> Best viewed on mobile or devices with device orientation feedback </div>
+
+		<script src="js/three.min.js"></script>
+
+		<script>
+
+		var camera, scene, renderer;
+		
+
+		init();
+		animate();
+		
+
+		function init() {
+
+			// document.body.innerHTML = "Best viewed on mobile or devices with device orientation feedback" ;
+
+			scene = new THREE.Scene();
+
+			scene.fog = new THREE.FogExp2( 0xffffff, 0.002 );
+
+			
+
+			camera = new THREE.PerspectiveCamera( 85, window.innerWidth / window.innerHeight, 1, 8000 );
+
+			
+			
+			
+			// camera.position.x = x * 300;
+			// camera.position.y = y * 300;
+
+
+
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+			renderer.setClearColor( 0xffffff );
+
+				
+				for ( var i = 0; i < 500; i ++ ) {
+
+					radii = ( Math.random() - 5 ) * 12;
+					radii2 = ( Math.random() - 5 ) * 12;
+					radii3 = ( Math.random() - 5 ) * 12;
+
+					var geometry = new THREE.BoxGeometry( radii, radii2, radii3);
+
+			
+					var material =  new THREE.MeshBasicMaterial( { color:0x2d2d2d } );
+
+					
+
+					
+
+					var mesh = new THREE.Mesh( geometry, material );
+					mesh.position.x = ( Math.random() - 0.5 ) * 1000;
+					mesh.position.y = ( Math.random() - 0.5 ) * 1000;
+					mesh.position.z = ( Math.random() - 0.5 ) * 1000;
+
+
+					mesh.updateMatrix();
+					mesh.matrixAutoUpdate = false;
+					scene.add( mesh );
+				}
+			}
+
+			
+
+			function render() {
+			
+			
+			function handleOrientation(event) {
+			  var x = event.beta; 
+			  var y = event.gamma; 
+			  var z = event.alpha; 
+
+			  // console.log(x + " and " + y);
+			  camera.position.z = x*50;
+			  camera.position.y = y*25;
+			  camera.position.x = z*25;
+
+
+			  console.log(camera.position.z);
+
+			  
+			 
+			}
+
+			window.addEventListener('deviceorientation',handleOrientation);
+
+			// camera.position.z = Math.floor((Math.random() * 700) + 690);
+
+			renderer.render( scene, camera );
+
+			}
+
+			function animate() {
+				requestAnimationFrame( animate );
+				
+				render();
+
+			}
+			
+
+			
+
+			
+
+
+
+
+
+
+			</script>
+		</body>
+		</html>
