@@ -9,9 +9,18 @@
 
     <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
-    
+    <a rel="author" href="{{ "/" | relative_url }}">Home</a>
      <a rel="author" href="/about">About</a>
-     <a rel="author" href="{{ "/" | relative_url }}">Home</a>
+
+  {% if page.previous.url %}
+    
+  <a class="prev" href="{{page.previous.url}}">Next &rarr; </a>
+  {% endif %}
+  {% if page.next.url %}
+  <a class="next" href="{{page.next.url}}">&larr; Previous</a>
+  {% endif %}
+    
+     
 
   </div>
 

@@ -4,15 +4,17 @@
 .site-header {
   
   min-height: $spacing-unit * 1.865;
+  width: 50%;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
 }
 
 .site-title {
   position: fixed;
-  z-index: 2;
   width: 100%;
+
   
 }
 
@@ -20,6 +22,15 @@
 float: left;
 padding: 20px;
 font-weight: 800;
+
+}
+
+.site-title a.next {
+  float: right;
+}
+
+.site-title a.prev {
+  float: right;
 }
 
 .site-nav {
@@ -30,9 +41,6 @@ font-weight: 800;
   font-size: 15px;
   letter-spacing: 2px;
   
-
-
-
   }
 
 
@@ -67,7 +75,7 @@ font-weight: 800;
 
 /* Change the link color on hover */
 li a:hover {
-    background-color: #ffff00;
+    background-color: #EE5C5D;
     
 }
 
@@ -91,7 +99,7 @@ li a:hover {
 }
 
 a.bigbutton:link, a.bigbutton:visited {
-    background-color: #f44336;
+    background-color: #EE5C5D;
     color: white;
     padding: 14px 25px;
     text-align: center;
@@ -103,7 +111,7 @@ a.bigbutton:link, a.bigbutton:visited {
 
 
 a.bigbutton:hover, a.bigbutton:active {
-    background-color: red;
+    background-color: black;
 }
 
 /**
@@ -196,29 +204,9 @@ a.bigbutton:hover, a.bigbutton:active {
 
 }
 
-.PageNavigation {
-  
-  display: block;
-  width: 100%;
-  position: fixed;
-  z-index: 5;
 
-  
 
-}
 
-.PageNavigation a {
-
-  display: block;
-  width: auto;
-  float: right;
-  padding: 20px;
-  font-weight: 800;
-}
-
-.PageNavigation .next {
-  text-align: right;
-}
 
 .post-list-heading {
   @include relative-font-size(1.75);

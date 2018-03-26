@@ -112,7 +112,7 @@ a {
   a:visited {
     color: #070707; }
   a:hover {
-    color: red; }
+    color: #EE5C5D; }
   .social-media-list a:hover {
     text-decoration: none; }
     .social-media-list a:hover .username {
@@ -217,17 +217,23 @@ table {
  */
 .site-header {
   min-height: 55.95px;
+  width: 50%;
   position: relative; }
 
 .site-title {
   position: fixed;
-  z-index: 2;
   width: 100%; }
 
 .site-title a {
   float: left;
   padding: 20px;
   font-weight: 800; }
+
+.site-title a.next {
+  float: right; }
+
+.site-title a.prev {
+  float: right; }
 
 .site-nav {
   float: left;
@@ -257,7 +263,7 @@ table {
     padding: 8px 16px;
     text-decoration: none; }
   .filters li a:hover {
-    background-color: #ffff00; }
+    background-color: #EE5C5D; }
   .filters .btn {
     border: none;
     outline: none;
@@ -270,7 +276,7 @@ table {
     color: black; }
 
 a.bigbutton:link, a.bigbutton:visited {
-  background-color: #f44336;
+  background-color: #EE5C5D;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -279,7 +285,7 @@ a.bigbutton:link, a.bigbutton:visited {
   font-weight: 700; }
 
 a.bigbutton:hover, a.bigbutton:active {
-  background-color: red; }
+  background-color: black; }
 
 /**
  * Site footer
@@ -348,22 +354,6 @@ a.bigbutton:hover, a.bigbutton:active {
   margin-left: auto;
   margin-right: auto;
   width: 100%; }
-
-.PageNavigation {
-  display: block;
-  width: 100%;
-  position: fixed;
-  z-index: 5; }
-
-.PageNavigation a {
-  display: block;
-  width: auto;
-  float: right;
-  padding: 20px;
-  font-weight: 800; }
-
-.PageNavigation .next {
-  text-align: right; }
 
 .post-list-heading {
   font-size: 24.5px; }
