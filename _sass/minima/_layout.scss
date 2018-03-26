@@ -192,6 +192,7 @@ a.bigbutton:hover, a.bigbutton:active {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 
 }
 
@@ -341,4 +342,8 @@ letter-spacing: 1px;
       @include relative-font-size(1.125);
     }
   }
+}
+
+#set {
+  font-weight: 800;
 }
