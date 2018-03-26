@@ -222,7 +222,8 @@ table {
 
 .site-title {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 25; }
 
 .site-title a {
   float: left;
