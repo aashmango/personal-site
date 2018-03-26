@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>de Casteljau</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+    </script>
+
+    <style>
+    body {
+      margin: 0 auto;
+      background-color: #fff;
+
+    }
+
+      #output {
+      font-size: 8pt;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      margin: 15px;
+      position: absolute;
+      width: 25%;
+      line-height: 12pt;
+    }
+
+     #output2{
+      font-size: 8pt;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      margin: 15px;
+      position: absolute;
+      width: 25%;
+      line-height: 12pt;
+    }
+
+    span {
+      font-weight: 800;
+    }
+
+
+    figure {
+      margin: 0px;
+    }
+  
+  </style>
+
+
+
+  </head>
+  <body>
+
+
+    <div id="output">This is a computational exploration of bezier curves. All curves are quadratic and form polybeziers at the red points. The segments on the left are parts of each bezier mapped onto a vertical axis in order to show the changing segment length of each bezier curve as evaluated over parameter t. <span>Click and drag the red circles to readjust the curves.</span>
+    </div>
+
+  
+
+
+ <script>
+
+    // function scrollfunction() {
+    //   var kuler = 10;
+    //   document.body.style.background-color = "rgba(0,0," + kuler +",1);";
+
+    // }
+
+    var arr = [];
+
+
+    </script>
+  
+
+
+   
+    <main>
+      
+
+      <section id="constructor">
+      
+
+        <figures>
+        
+
+          <figure class="cubic">
+            <script type="text/beziercode">
+
+       
+            var curve = new Bezier(1000,85 , 310,610 , 810,800 , 950,1095);
+
+            var curve_2 = new Bezier(950,1095 , 930,1310 , 610,1600 , 250,1895);
+
+            var curve_3 = new Bezier(250,1895 , 430,2210 , 610,2500 , 450,2895 );
+
+            var curve_4 = new Bezier(450,2895 , 330,3210 , 910,3500 , 850,3895 );
+
+            var curve_5 = new Bezier(850,3895 , 330,4210 , 210,4500 , 750,4895 );
+
+            var arre = [];
+
+            arre = [curve,curve_2,curve_3,curve_4,curve_5];
+
+            var draw = function() {
+
+
+
+              drawCurve(curve);
+              drawCurve(curve_2);
+              drawCurve(curve_3);
+              drawCurve(curve_4);
+              drawCurve(curve_5);
+              
+              drawSkeleton(curve);
+              drawSkeleton(curve_2);
+              drawSkeleton(curve_3);
+              drawSkeleton(curve_4);
+              drawSkeleton(curve_5);
+
+
+              var step = 0.04;
+
+              for(var each=0; each<(arre.length); each+=1) {
+
+              
+              for(var t=0; t<=1; t+=step) {
+
+              crvathand = arre[each];
+
+              var pt = crvathand.get(t);
+              
+
+
+              setColor("rgba(0,0,0,0.5"); 
+              drawCircle(pt,1);
+             
+
+              if (t === 0) {continue;};
+              if (t === 1) {continue;};
+
+              setColor("rgba(0,0,0,0.2"); 
+              
+             
+             // console.log(arre);
+             // console.log(arre.length);
+
+
+            
+              // console.log(each);
+
+              
+
+              var c = crvathand.split(t , t + step);
+
+              translation_x1 = (c.points[1].x) - (c.points[0].x);
+              translation_x2 = (c.points[2].x) - (c.points[0].x);
+              translation_x3 = (c.points[3].x) - (c.points[0].x);
+
+              translation_y1 = (c.points[1].y) - (c.points[0].y);
+              translation_y2 = (c.points[2].y) - (c.points[0].y);
+              translation_y3 = (c.points[3].y) - (c.points[0].y);
+              
+
+              var factorx = 2;
+              var factor = 1.5;
+
+               var new_x = 100;
+               var new_x1 = new_x + translation_x1 * factorx;
+               var new_x2 = new_x + translation_x2 * factorx*2;
+               var new_x3 = new_x + translation_x3 * factorx*3;
+
+               move_factor = 3;
+
+               
+
+               var new_y =   (20 + t * 1100) + (1 * move_factor) + each * 1000;
+               var new_y1 =   (new_y + translation_y1 * factor) + (1 * move_factor);
+               var new_y2 =   (new_y + translation_y2 * factor) + (1 * move_factor);
+               var new_y3 =   (new_y + translation_y3 * factor) + (1 * move_factor);
+
+               var new_curve = new Bezier(new_x,new_y,new_x1,new_y1,new_x2,new_y2,new_x3,new_y3);
+               setColor("rgba(0,0,0," + (t *0.5) );
+
+               drawSkeleton2(new_curve);
+               drawCurve(new_curve);
+
+               var arclength = new_curve.length();
+
+              
+
+               arr.push(arclength);
+
+               
+
+
+              if (arclength === 0) {continue;};
+              
+
+               var j = crvathand.split(0 , arclength/110);
+               var m = crvathand.split(1-(arclength/110) , 1);
+
+               var factor_2 = t * 250;
+               var factor_inverse = (1-t) * 250;
+
+               var pew_x = (factor_2) + (j.points[0].x);
+               var pew_x1 = (factor_2) +(j.points[1].x);
+               var pew_x2 = (factor_2) +(j.points[2].x);
+               var pew_x3 = (factor_2) + (j.points[3].x);
+
+               var pew_y = (factor_2) +  (j.points[0].y);
+               var pew_y1 = (factor_2) +  (j.points[1].y);
+               var pew_y2 = (factor_2) +  (j.points[2].y);
+               var pew_y3 = (factor_2) +  (j.points[3].y);
+
+               var dew_x = (factor_inverse) + (m.points[0].x);
+               var dew_x1 = (factor_inverse) +(m.points[1].x);
+               var dew_x2 = (factor_inverse) +(m.points[2].x);
+               var dew_x3 = (factor_inverse) + (m.points[3].x);
+
+               var dew_y = (factor_inverse) +  (m.points[0].y);
+               var dew_y1 = (factor_inverse) +  (m.points[1].y);
+               var dew_y2 = (factor_inverse) +  (m.points[2].y);
+               var dew_y3 = (factor_inverse) +  (m.points[3].y);
+
+              
+
+              var pew_curve = new Bezier(pew_x,pew_y,pew_x1,pew_y1,pew_x2,pew_y2,pew_x3,pew_y3);
+              setColor("rgba(230,0,0," + t );
+              drawCurve(pew_curve);
+
+             
+
+              var dew_curve = new Bezier(dew_x,dew_y,dew_x1,dew_y1,dew_x2,dew_y2,dew_x3,dew_y3);
+              setColor("rgba(0,0,0," + (t-0.3));
+              drawCurve(dew_curve);
+
+              var pewpt = pew_curve.get(1);
+
+              setColor("rgba(0,0,0,0.2"); 
+              drawCircle(pewpt,2);
+
+              var dewpt = dew_curve.get(0);
+
+              setColor("rgba(0,0,0,0.2"); 
+              drawCircle(dewpt,2);
+             
+             
+              
+          
+               
+
+            }
+
+          }
+          // console.log(arr);
+
+
+       
+
+
+
+
+          }
+
+// console.log(arr);
+
+
+
+          </script>
+        </figure>
+        </figures>
+
+     
+      </section>
+
+
+</main>
+<!-- 
+<script>
+
+console.log(arr);
+
+var sort = function() {
+    var quickSort = function(arr) {
+        var left = [];
+        var right = [];
+
+        if (!$.isArray(arr)) {
+            return "input is not an array";
+        }
+
+        if (arr.length <= 1) return arr;
+
+        var pivot = arr[0];
+        arr.shift();
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] <= pivot ? left.push(arr[i]) : right.push(arr[i]);
+        }
+        return $.merge($.merge(quickSort(left), $.makeArray(pivot)), quickSort(right));
+    };
+
+    return {
+        quickSort: quickSort
+    };
+}();
+
+
+var output = $("#output");
+// var arr = [55, 64, 41.5, 41.2, 43, 32, 41];
+$.each(arr, function(idx, item) {
+    output.append(item + ", ");
+});
+var result = sort.quickSort(arr);
+output.append("<br/><br/>Result:" + "<br/>");
+$.each(result, function(idx, item) {
+    output.append(item + ", ");
+});
+
+</script>
+
+ -->
+
+<script src="./bezier.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/interaction.js"></script>
+<script src="js/loader.js"></script>
+
+</body>
+
+</html>
+
+
