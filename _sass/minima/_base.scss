@@ -10,7 +10,7 @@ dl, dd, ol, ul, figure {
 
 p {
   line-height: 30px;
-  width: 65%;
+  width: 100%;
 }
 
 /**
@@ -81,11 +81,13 @@ display: block;
   overflow: hidden;
   position: relative;
   margin-top: 30px;
+  border: 0px solid black;
+
 
   @include media-query($on-palm) {
   display: block;
-  width: 400px;
-  height:400px;
+  width: 355px;
+  height:355px;
   margin-left: auto;
   margin-right: auto;
   }

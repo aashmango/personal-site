@@ -13,10 +13,10 @@ categories:
 
 This project explores the effect of a few simple computational paramenters on the generation of a virtual cityscape. Trigonometric functions control camera movement as well as the undulation of buildings, while the relative positions/dimensions are arbitrarily generated each time the webpage reloads. Built with the three.js library.
 
-<a href="/assets/irel/city.html" target="_blank" class="bigbutton">Demo 1 ➝</a>
+<a href="/assets/irel/3d/city.html" target="_blank" class="bigbutton">Demo 1 ➝</a>
 
 
-<a href="/assets/irel/double_geometry.html" target="_blank" class="bigbutton">Demo 2 ➝</a>
+<a href="/assets/irel/3d/double_geometry.html" target="_blank" class="bigbutton">Demo 2 ➝</a>
 
 <div>
   <video autoPlay loop>

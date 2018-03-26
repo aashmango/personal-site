@@ -12,20 +12,19 @@
 .site-title {
   position: fixed;
   z-index: 2;
-  width: 50px;
-  float: left;
+  width: 100%;
   
-  margin-top: 40px;
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
+}
+
+.site-title a{
+float: left;
+padding: 20px;
+font-weight: 800;
 }
 
 .site-nav {
-  float: right;
+  float: left;
   text-align: right;
-  margin-top: 50px;
   color: $text-color;
   font-weight:$heavy-font-weight;
   font-size: 15px;
@@ -192,8 +191,33 @@ a.bigbutton:hover, a.bigbutton:active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    width: 100%;
 
+
+}
+
+.PageNavigation {
+  
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+
+  
+
+}
+
+.PageNavigation a {
+
+  display: block;
+  width: auto;
+  float: right;
+  padding: 20px;
+  font-weight: 800;
+}
+
+.PageNavigation .next {
+  text-align: right;
 }
 
 .post-list-heading {

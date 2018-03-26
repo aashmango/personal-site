@@ -1,6 +1,31 @@
 ---
 layout: default
 ---
+<style>
+body{
+  background-color: {{ page.color }};
+  color: {{ page.textcolor }};
+}
+
+
+.text-info {
+  color: {{ page.textcolor }};
+}
+
+.text-info:hover {
+  color: red;
+}
+
+.site-title a {
+  color: {{ page.textcolor }};
+}
+
+.site-title a:hover {
+  color: red;
+}
+
+</style>
+
 
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -38,7 +63,7 @@ layout: default
 
 
 <!-- _____________________ -->
-<h1 class="more" itemprop="name headline" style="padding-top: 100px; text-align: center;"">More projects</h1>
+<h1 class="more" itemprop="name headline" style="padding-top: 100px; text-align: center;"">More Posts</h1>
 
 
  {% if site.posts.size > 0 %}

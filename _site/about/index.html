@@ -39,39 +39,40 @@
 </head>
 
 
+ <div class="PageNavigation">
+  
+  
+    
+</div>
+
   <body>
    
 
    <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  
     
     
-    <a class="site-title" rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a>
+
+    <div class="site-title">
+  <!--   <a rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
     <!-- <a class="site-title" rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
-    <a class="site-nav" rel="author" href="/about">???</a>
+    
+     <a rel="author" href="/about">About</a>
+     <a rel="author" href="/">Home</a>
 
   </div>
 
 
 
+
 </header>
 
-<script>
-// Add active class to the current button (highlight it)
-var header = document.getElementById("filter");
-var btns = header.getElementsByClassName("btn");
-console.log(btns);
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
+
+
+
 
 
 

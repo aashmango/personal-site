@@ -1,0 +1,20 @@
+---
+layout: post
+identity: 2
+title:  "Sinan"
+info: "Analytical graphics"
+date:   2018-02-26 15:20:19 -0500
+image: /assets/homepage_images/suleymaniye.png
+allimages: /assets/images/none
+color: "#232323"
+textcolor: "white"
+categories:
+- Graphic Design |
+- Architectural Drawing
+---
+
+
+  
+
+
+<img class="post-images" src="/assets/images/suleymaniye/sinan.jpg">
