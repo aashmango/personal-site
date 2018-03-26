@@ -3,7 +3,7 @@ var width, height, center;
 var points = 10;
 var smooth = true;
 var path = new Path({
-    fillColor: '#ffff00'
+    fillColor: '#ffffff'
 });
 var mousePos = view.center / 2;
 var pathHeight = mousePos.y;
