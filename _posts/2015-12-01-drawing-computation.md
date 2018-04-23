@@ -2,14 +2,14 @@
 layout: post
 identity: 0
 title:  "Drawing Computation"
-info: "Using pen-plotting and python to make computational drawings"
-date:   2018-02-26 15:20:19 -0500
+info: "Using 80s pen-plotters and Python to make architectural drawings"
+date:   2015-12-01 15:20:19 -0500
 image: /assets/images/computing/thumb.png
 allimages: /assets/none
 headerimage: /assets/images/computing/cropbg.jpg
 categories:
-- Drawing |
-- Computation |
+- Architectural Drawing |
+- Computational Design |
 - Writing
 ---
 

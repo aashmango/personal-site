@@ -2,13 +2,13 @@
 layout: post
 identity: 2
 title:  "Times Square"
-info: "3D-printing a giant fresnel lens"
-date:   2018-02-26 15:20:19 -0500
+info: "3D-printing a giant fresnel lens in the middle of Manhattan"
+date:   2018-01-01 15:20:19 -0500
 image: /assets/homepage_images/lens.png
 allimages: /assets/none
 
 categories:
-- Digital Fabrication |
+- Computational Design |
 - 3D printing
 ---
 

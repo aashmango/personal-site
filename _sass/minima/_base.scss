@@ -74,14 +74,19 @@ display: block;
 }
 
 
-#cropper {
-  width: 100%;
 
+
+#cropper {
+  width: 100px;
   border-radius:50%;
   overflow: hidden;
   position: relative;
   margin-top: 30px;
+  margin-right: 50px;
+  float: left;
   border: 0px solid black;
+  float: right;
+  transition: 1s;
 
 
   @include media-query($on-palm) {
@@ -90,8 +95,23 @@ display: block;
   height:355px;
   margin-left: auto;
   margin-right: auto;
+
   }
 }
+
+
+.thumbhover:hover #cropper{
+-webkit-transform: scale(8); 
+-moz-transform: scale(8);
+-o-transform: scale(8);
+transform: scale(8);
+z-index: 100;
+float: right;
+transition: 5s;
+
+}
+
+
 
 .splash {
   margin-top: -75px;
@@ -123,8 +143,6 @@ li {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Headings

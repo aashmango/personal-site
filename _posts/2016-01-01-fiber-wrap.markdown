@@ -2,12 +2,12 @@
 layout: post
 identity: 0
 title:  "Fiber Wrap"
-info: "A small exploration into the possible uses of robotically controlled fiber wrapping techniques"
-date:   2016-02-26 15:20:19 -0500
+info: "A short study of robotically controlled fiber wrapping techniques"
+date:   2016-01-01 15:20:19 -0500
 image: /assets/homepage_images/wrap.png
 allimages: /assets/none
 categories:
-- 3D Design |
+- Computational Design |
 - Digital Fabrication
 ---
 A small exploration into the possible uses of robotically controlled fiber wrapping techniques. With the help of an ABB 6-axis robot arm, we were able to program paths that allow for the wrapping and potential weaving of fiber, which can be hardened during or post manufaturing with a resin coating to create shell structures. 

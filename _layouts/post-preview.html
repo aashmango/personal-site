@@ -3,8 +3,8 @@
         <a class = "thumbhover" href="{{ post.url | relative_url }}">
     
 
-           <div id="cropper">
-        <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
+        <div id="cropper">
+        <img id="scale_img" src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
         </div>
           <div class = text-info>           
             <h2>

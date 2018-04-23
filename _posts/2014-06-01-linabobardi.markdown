@@ -2,8 +2,8 @@
 layout: post
 identity: 2
 title:  "Lina Bo Bardi"
-info: "Analytical graphics"
-date:   2018-02-26 15:20:19 -0500
+info: "Architectural graphic"
+date:   2014-06-01 15:20:19 -0500
 image: /assets/images/linabo/3.svg
 allimages: /assets/images/none
 headerimage: /assets/none
@@ -17,8 +17,7 @@ categories:
 <img class="post-images" src="/assets/images/linabo/3.svg">
 
 <h1>By adding ‘parts’ of program to the existing longitudinal structure, Bo Bardi acheives a sense of ‘(dis)assembly’ in the redesign of the old factory.</h1>
-
-    
+   
 Lina Bo Bardi’s SESC Pompeia attempts to create an experience that lies at the juncture between work and play. It employs the large proportioned and concrete clad brutalist style in order to retain the experience of the old factory (from which this building was redeveloped), while simultaneously creating a seemingly leisurely environment. 
 
 

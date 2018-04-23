@@ -2,13 +2,13 @@
 layout: post
 identity: 1
 title:  "FUSE Pavilion"
-info: "A pavilion build with 3D printed nodes for an event at the MIT Media Lab."
-date:   2018-02-26 15:20:19 -0500
+info: "A pavilion build with SLS 3D printed nodes for an event at the MIT Media Lab"
+date:   2017-06-01 15:20:19 -0500
 image: /assets/homepage_images/pavilion.png
 headerimage: /assets/images/pavilion/cover.jpg
 allimages: /assets/images/pavilion
 categories:
-- Parametric Design |
+- Computational Design |
 - 3D Printing 
 ---
 
