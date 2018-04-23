@@ -76,7 +76,6 @@ display: block;
 
 #cropper {
   width: 100%;
-
   border-radius:50%;
   overflow: hidden;
   position: relative;
@@ -91,6 +90,12 @@ display: block;
   margin-left: auto;
   margin-right: auto;
   }
+}
+
+.thumbhover:hover #cropper{
+  transition: 5s;
+  width: 500px;
+  z-index: 100;
 }
 
 .splash {
