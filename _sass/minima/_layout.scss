@@ -201,14 +201,28 @@ a.bigbutton:hover, a.bigbutton:active {
 
 .post-images {
   padding-top: 60px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 
 
 }
 
+.post-images-small {
+  padding-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+  @include media-query($on-palm) {
+  width: auto;
+
+    }
+
+
+}
 
 
 

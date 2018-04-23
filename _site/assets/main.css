@@ -359,6 +359,16 @@ a.bigbutton:hover, a.bigbutton:active {
   margin-right: auto;
   width: 100%; }
 
+.post-images-small {
+  padding-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; }
+  @media screen and (max-width: 600px) {
+    .post-images-small {
+      width: auto; } }
+
 .post-list-heading {
   font-size: 28px; }
 
