@@ -1,63 +1,45 @@
-
-var width, height, center;
-var points = 10;
-var smooth = true;
-var path = new Path({
-    fillColor: '#ffffff'
-});
+var h = 50;
+var w = 50;
+var center = view.center;
+var width = view.size.width;
+var height = view.size.height;
+var path = new Path();
 var mousePos = view.center / 2;
 var pathHeight = mousePos.y;
-initializePath();
 
+path.strokeColor = 'black';
+path.add(new Point(center.x - w,center.y + h)); 
+path.add(new Point(center.x + w,center.y + h)); 
+path.add(new Point(center.x + w,center.y - h));
+path.add(new Point(center.x - w,center.y - h));
+path.closed = true;
 
+// Select the path, so we can see its handles:
+path.fullySelected = false;
 
-function initializePath() {
-    center = view.center;
-    width = view.size.width;
-    height = view.size.height / 2;
-    path.segments = [];
-    path.add(view.bounds.bottomLeft);
-    for (var i = 1; i < points; i++) {
-        var point = new Point(width / points * i, center.y);
-        path.add(point);
-    }
-    path.closed = true;
-    path.add(view.bounds.bottomRight);
-    path.fullySelected = false;
-}
+// Create a copy of the path and move it 100pt to the right:
+// var copy = path.clone();
+path.fullySelected = false;
+path.fillColor = "Black";
+
+// Smooth the segments of the copy:
+path.smooth();
 
 function onFrame(event) {
-    if (document.documentElement.clientWidth > 600) {
-    pathHeight += (center.y - mousePos.y - pathHeight) / 10;
-    for (var i = 1; i < points; i++) {
-        var sinSeed = event.count + (i + i % 10) * 100;
-        var sinHeight = Math.sin(sinSeed / 200) * pathHeight;
-        var yPos = Math.sin(sinSeed / 100) * sinHeight + height;
-        path.segments[i].point.y = yPos - 300;
-    }
-    if (smooth)
-        path.smooth({ type: 'continuous' });
-}
-}
 
-function onMouseMove(event) {
-    mousePos = event.point;
-}
+	for (var i = 1; i < 4; i++) {
 
-// function onMouseDown(event) {
-//     smooth = !smooth;
-//     if (!smooth) {
-//         // If smooth has been turned off, we need to reset
-//         // the handles of the path:
-//         for (var i = 0, l = path.segments.length; i < l; i++) {
-//             var segment = path.segments[i];
-//             segment.handleIn = segment.handleOut = null;
-//         }
-//     }
-// }
+	var sinSeed = event.count + (i + i % 10) * 50;
+	var sinHeight = Math.sin(sinSeed / 200) * 50;
+	var yPos = Math.sin(sinSeed / 400) * sinHeight * Math.random() * 0.08;
+	path.segments[i].point.y += yPos;
+	
 
-// Reposition the path whenever the window is resized:
-function onResize(event) {
-    initializePath();
+	}
+
+	path.rotate(0.03);
+
+
+
 }
 

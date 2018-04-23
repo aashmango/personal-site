@@ -1,17 +1,17 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-
-$base-font-family: 'Space Mono', Helvetica, Arial, sans-serif !default;
-$base-font-size:   14px !default;
+// Space Mono
+$base-font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size:  $base-font-size * 0.775 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #ffff00 !default;
+$background-color: #ffffff !default;
 $brand-color:      #2d2d2d !default;
 
 
