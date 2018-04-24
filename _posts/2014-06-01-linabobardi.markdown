@@ -3,7 +3,7 @@ layout: post
 identity: 2
 title:  "Lina Bo Bardi"
 info: "Analytical graphics"
-date:   2018-02-26 15:20:19 -0500
+date:   2014-06-01 15:20:19 -0500
 image: /assets/images/linabo/3.svg
 allimages: /assets/images/none
 headerimage: /assets/none

@@ -3,7 +3,7 @@ layout: post
 identity: 0
 title:  "Parametric Pens"
 info: "600 unique 3D-printed pens, parametrically generated in 3D CAD"
-date:   2018-02-26 15:20:19 -0500
+date:   2017-06-01 15:20:19 -0500
 headerimage: /assets/posts/2018-02-26-first-post/pens.png
 image: /assets/homepage_images/pens.png
 allimages: /assets/images/pens

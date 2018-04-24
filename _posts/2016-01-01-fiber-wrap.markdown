@@ -3,7 +3,7 @@ layout: post
 identity: 0
 title:  "Fiber Wrap"
 info: "A small exploration into the possible uses of robotically controlled fiber wrapping techniques"
-date:   2016-02-26 15:20:19 -0500
+date:   2016-01-01 15:20:19 -0500
 image: /assets/homepage_images/wrap.png
 allimages: /assets/none
 categories:
