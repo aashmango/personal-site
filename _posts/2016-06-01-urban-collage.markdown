@@ -15,25 +15,25 @@ This experiement juxtaposes sattelite imagery at different scales to create inte
 
 <a href="/assets/irel/collage/collagedemo.html" target="_blank" class="bigbutton">Live Demo ➝</a>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/maps/1.mp4" type="video/mp4"/>
   </video>
 </div>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/maps/tes.mp4" type="video/mp4"/>
   </video>
 </div>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/maps/3.mp4" type="video/mp4"/>
   </video>
 </div>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/maps/bes.mp4" type="video/mp4"/>
   </video>

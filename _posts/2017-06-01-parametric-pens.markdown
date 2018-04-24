@@ -7,6 +7,7 @@ date:   2018-02-26 15:20:19 -0500
 headerimage: /assets/posts/2018-02-26-first-post/pens.png
 image: /assets/homepage_images/pens.png
 allimages: /assets/images/pens
+color: "#e2e2e2"
 categories:
 - 3D Printing |
 - Parametric Design |

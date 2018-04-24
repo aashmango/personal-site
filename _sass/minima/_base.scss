@@ -59,6 +59,7 @@ ul, ol, dl, figure,
 /**
  * Images
  */
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -81,7 +82,7 @@ display: block;
   position: relative;
   margin-top: 30px;
   border: 0px solid black;
-
+  transition: 0.5s;
 
   @include media-query($on-palm) {
   display: block;
@@ -92,14 +93,42 @@ display: block;
   }
 }
 
-.thumbhover:hover #cropper{
-  transition: 5s;
-  width: 500px;
-  z-index: 100;
+
+.thumbhover:hover #cropper {
+-webkit-transform: scale(1.1); 
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+z-index: 100;
+transition: 0.5s;
+}
+
+.thumbhover:hover {
+  transition: 0.5s;
+}
+
+.thumbhover {
+  transition: 0.5s;
 }
 
 .splash {
   margin-top: -75px;
+}
+
+.headshot {
+  width: 200px;
+  border-radius:50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 80px;
+  border: 0px solid black;
+
+  @include media-query($on-palm) {
+  float: none;
+  width: 100%;
+
+  }
+  
 }
 
 /**
@@ -148,13 +177,15 @@ h1 {
 a {
   color: $brand-color;
   text-decoration: none;
+  transition: 0.5s;
 
   &:visited {
     color: darken($brand-color, 15%);
   }
 
   &:hover {
-    color: #EE5C5D;
+    color: #6741FF;
+    transition: 0.5s;
     
   }
 

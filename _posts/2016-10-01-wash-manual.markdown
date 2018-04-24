@@ -6,6 +6,8 @@ info: "A small exploration into the possible uses of robotically controlled fibe
 date:   2016-02-26 15:20:19 -0500
 image: /assets/homepage_images/manual.png
 allimages: /assets/images/cure-manual
+color: "#417EFF"
+textcolor: "white"
 
 categories:
 - Drawing |

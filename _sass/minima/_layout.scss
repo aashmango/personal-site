@@ -78,12 +78,6 @@ font-weight: 800;
 }
 
 
-/* Change the link color on hover */
-li a:hover {
-    background-color: #EE5C5D;
-    
-}
-
 .btn {
   border: none;
   outline: none;
@@ -104,26 +98,32 @@ li a:hover {
 }
 
 a.bigbutton:link, a.bigbutton:visited {
-    background-color: #EE5C5D;
-    color: white;
+    background-color: white;
+    border: 2px solid #6741FF;
+    color: #6741FF;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: inherit;
     font-weight: $heavy-font-weight;
+    transition: 0.5s;
 
 }
 
 
 a.bigbutton:hover, a.bigbutton:active {
-    background-color: black;
+    background-color: #6741FF;
+    color: white;
+    transition: 0.5s;
 }
 
 /**
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 4px solid #6741FF;
   padding: $spacing-unit 0;
 }
 
@@ -192,6 +192,8 @@ a.bigbutton:hover, a.bigbutton:active {
  */
 .page-content {
   padding: $spacing-unit 0;
+  padding-bottom: 100px;
+  
   }
 
 .page-heading {

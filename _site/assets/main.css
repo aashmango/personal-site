@@ -63,7 +63,8 @@ video {
   overflow: hidden;
   position: relative;
   margin-top: 30px;
-  border: 0px solid black; }
+  border: 0px solid black;
+  transition: 0.5s; }
   @media screen and (max-width: 600px) {
     #cropper {
       display: block;
@@ -73,12 +74,33 @@ video {
       margin-right: auto; } }
 
 .thumbhover:hover #cropper {
-  transition: 5s;
-  width: 500px;
-  z-index: 100; }
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 100;
+  transition: 0.5s; }
+
+.thumbhover:hover {
+  transition: 0.5s; }
+
+.thumbhover {
+  transition: 0.5s; }
 
 .splash {
   margin-top: -75px; }
+
+.headshot {
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 80px;
+  border: 0px solid black; }
+  @media screen and (max-width: 600px) {
+    .headshot {
+      float: none;
+      width: 100%; } }
 
 /**
  * Figures
@@ -113,11 +135,13 @@ h1 {
  */
 a {
   color: #2d2d2d;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.5s; }
   a:visited {
     color: #070707; }
   a:hover {
-    color: #EE5C5D; }
+    color: #6741FF;
+    transition: 0.5s; }
   .social-media-list a:hover {
     text-decoration: none; }
     .social-media-list a:hover .username {
@@ -257,8 +281,7 @@ table {
   margin: 0;
   padding: 0;
   padding-top: 40px;
-  font-weight: 700;
-  /* Change the link color on hover */ }
+  font-weight: 700; }
   @media screen and (max-width: 600px) {
     .filters {
       display: block;
@@ -271,8 +294,6 @@ table {
     color: black;
     padding: 8px 16px;
     text-decoration: none; }
-  .filters li a:hover {
-    background-color: #EE5C5D; }
   .filters .btn {
     border: none;
     outline: none;
@@ -285,22 +306,28 @@ table {
     color: black; }
 
 a.bigbutton:link, a.bigbutton:visited {
-  background-color: #EE5C5D;
-  color: white;
+  background-color: white;
+  border: 2px solid #6741FF;
+  color: #6741FF;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-weight: 700; }
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: inherit;
+  font-weight: 700;
+  transition: 0.5s; }
 
 a.bigbutton:hover, a.bigbutton:active {
-  background-color: black; }
+  background-color: #6741FF;
+  color: white;
+  transition: 0.5s; }
 
 /**
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
+  border-top: 4px solid #6741FF;
   padding: 30px 0; }
 
 .footer-heading {
@@ -352,7 +379,8 @@ a.bigbutton:hover, a.bigbutton:active {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 30px 0;
+  padding-bottom: 100px; }
 
 .page-heading {
   font-size: 32px; }

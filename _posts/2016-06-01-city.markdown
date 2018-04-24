@@ -18,25 +18,25 @@ This project explores the effect of a few simple computational paramenters on th
 
 <a href="/assets/irel/3d/double_geometry.html" target="_blank" class="bigbutton">Demo 2 ➝</a>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/city/1.mp4" type="video/mp4"/>
   </video>
 </div>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/city/2.mp4" type="video/mp4"/>
   </video>
 </div>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/city/3.mp4" type="video/mp4"/>
   </video>
 </div>
 
-<div>
+<div class="post-images-small">
   <video autoPlay loop>
     <source src="/assets/video/city/4.mp4" type="video/mp4"/>
   </video>

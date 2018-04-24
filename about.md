@@ -3,14 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
-<style type="text/css"> .headshot {float: right;
-padding-left: 5%;
-padding-right: 5%;}</style>
-
-<img class="headshot" src="/assets/homepage_images/headshot.jpg" alt="Smiley face" width="45%">
 
 
-
+<img class="headshot" src="/assets/homepage_images/headshot.jpg">
 
 Product Designer at <a href="https://formlabs.com/"><span id="set">Formlabs</span></a>
 
