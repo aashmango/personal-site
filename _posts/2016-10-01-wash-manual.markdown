@@ -8,6 +8,7 @@ image: /assets/homepage_images/manual.png
 allimages: /assets/images/cure-manual
 color: "#417EFF"
 textcolor: "white"
+widthstyle: "30%"
 
 categories:
 - Drawing |

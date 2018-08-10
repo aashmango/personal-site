@@ -44,6 +44,24 @@ body {
   }
 }
 
+#top, #bottom, #left, #right {
+  background: $text-color;
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 20px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 20px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
 
 
 /**
@@ -77,12 +95,14 @@ display: block;
 
 #cropper {
   width: 100%;
-  border-radius:50%;
+  height: 200px;
+  border-radius:0%;
   overflow: hidden;
-  position: relative;
-  margin-top: 30px;
-  border: 0px solid black;
   transition: 0.5s;
+  display: block;
+  border: 1px solid #e2e2e2;
+  box-sizing: border-box;
+
 
   @include media-query($on-palm) {
   display: block;
@@ -94,21 +114,24 @@ display: block;
 }
 
 
-.thumbhover:hover #cropper {
--webkit-transform: scale(1.1); 
--moz-transform: scale(1.1);
--o-transform: scale(1.1);
-transform: scale(1.1);
-z-index: 100;
-transition: 0.5s;
-}
-
 .thumbhover:hover {
   transition: 0.5s;
 }
 
+.thumbhover:hover .text-info {
+  display: block;
+  background: white;
+  transition: 0.5s;
+
+
+}
+
+
+
 .thumbhover {
   transition: 0.5s;
+  position: relative;
+  display: inline-block;
 }
 
 .splash {
@@ -184,9 +207,7 @@ a {
   }
 
   &:hover {
-    color: #6741FF;
-    transition: 0.5s;
-    
+
   }
 
   .social-media-list &:hover {

@@ -7,6 +7,7 @@ date:   2015-12-01 15:20:19 -0500
 image: /assets/images/computing/thumb.png
 allimages: /assets/none
 headerimage: /assets/images/computing/cropbg.jpg
+widthstyle: "29%"
 categories:
 - Drawing |
 - Computation |

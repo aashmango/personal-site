@@ -7,6 +7,7 @@ date:   2016-06-01 15:20:19 -0500
 image: /assets/homepage_images/maps.png
 headerimage: /assets/AgreeableInformalBasenji.gif
 allimages: /assets/none
+widthstyle: "29%"
 categories:
 - Web experiment 
 ---

@@ -8,10 +8,10 @@ headerimage: /assets/posts/2018-02-26-first-post/pens.png
 image: /assets/homepage_images/pens.png
 allimages: /assets/images/pens
 color: "#e2e2e2"
+widthstyle: "21%"
 categories:
 - 3D Printing |
-- Parametric Design |
-- 3D Design
+- Parametric Design
 ---
 
 

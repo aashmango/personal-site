@@ -2,33 +2,14 @@
 layout: default
 ---
 
-
-
 <div class="home">
+  {% include all_posts.html %}
 
   {% if page.title %}
     <h1 class="page-heading">{{ page.title }}</h1>
   {% endif %}
- {{ content }}
 
-<!--    <div class = "splash">
-<canvas id="thecanvas" resize> </canvas>
-</div>
- -->
-  {% if site.posts.size > 0 %}
-
-
-    
-    <ul class="post-list">
-      
-      {% for post in site.posts %}
-      
-      {% include post-preview.html %}
-     
-      {% endfor %}
-    </ul>
-
-  {% endif %}
+  {{ content }}
 
 </div>
 

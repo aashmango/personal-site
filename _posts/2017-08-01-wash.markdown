@@ -6,6 +6,8 @@ info: "UI for post processing machines on an 8-bit LCD diplay"
 date:   2017-08-01 15:20:19 -0500
 image: /assets/homepage_images/wash.png
 allimages: /assets/images/none
+widthstyle: "21%"
+masonry: small
 categories:
 - UI/UX
 ---
@@ -25,7 +27,6 @@ categories:
 
 <img class="post-images-small" src="/assets/images/wash-cure/flow.jpg">
 <img class="post-images-small" src="/assets/images/wash-cure/flow2.jpg">
-
 <img class="post-images-small" src="/assets/images/wash-cure/preheating.gif">
 <img class="post-images-small" src="/assets/images/wash-cure/lowering.gif">
 <img class="post-images-small" src="/assets/images/wash-cure/undo.gif">

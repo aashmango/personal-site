@@ -1,0 +1,24 @@
+
+
+{% if site.posts.size > 0 %}
+
+    <ul class="post-list">
+    	<div class="{{ post.masonry }}"
+      
+      {% for post in site.posts %}
+
+      <div class="card-type"{% if post.widthstyle %}style="width:{{ post.widthstyle }}"{% endif %}>
+
+      {% include post-preview.html %}
+
+     </div>
+     
+      {% endfor %}
+
+    </ul>
+
+{% endif %}
+
+<!--  <div class="page-background"
+		{% if page.bgimage %}style="background-image: url({{ page.bgimage }})"
+		{% endif %}> -->

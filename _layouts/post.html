@@ -11,7 +11,11 @@ body{
   color: {{ page.textcolor }};
 }
 
+
+
 </style>
+
+
 
 
 
@@ -45,21 +49,8 @@ body{
   {% endif %}
 {% endfor %}
 
-
-
 <!-- _____________________ -->
 <h1 class="more" itemprop="name headline" style="padding-top: 100px; text-align: center;"">More Posts</h1>
 
-
- {% if site.posts.size > 0 %}
-    
-    <ul class="post-list">
-      {% for post in site.posts %}
-      
-      {% include post-preview.html %}
-     
-      {% endfor %}
-    </ul>
-
-  {% endif %}
+{% include all_posts.html %}
 

@@ -6,6 +6,7 @@ info: "A small exploration into the possible uses of robotically controlled fibe
 date:   2016-01-01 15:20:19 -0500
 image: /assets/homepage_images/wrap.png
 allimages: /assets/none
+widthstyle: "29%"
 categories:
 - 3D Design |
 - Digital Fabrication

@@ -6,6 +6,7 @@ info: "SLA 3D Printing flexible lattice structures as rolls"
 date:   2017-01-01 15:20:19 -0500
 image: /assets/homepage_images/textile.png
 allimages: /assets/none
+widthstyle: "29%"
 categories:
 - Digital Fabrication |
 - Laser Cutting
