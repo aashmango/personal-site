@@ -2,18 +2,15 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 
-
   {% include head.html %}
 
-
-
   <body>
-   
 
+    
+   
    {% include header.html %}
 
-
-
+   <div class="hidden">
 
     <img class = "splash" src="{{ page.headerimage | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
 
@@ -26,6 +23,8 @@
     </main>
 
     {% include footer.html %}
+
+  </div>
 
   </body>
 

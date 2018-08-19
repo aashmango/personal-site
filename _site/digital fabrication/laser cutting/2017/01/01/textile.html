@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,6 +35,8 @@
 
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/js/pageload.js"></script>
+<script src="/assets/js/filtertabs.js"></script>
 <!--    <script type="text/javascript" src="/assets/js/paper-full.js"></script>
 
 <script type="text/paperscript" src="/assets/blobs.js" canvas="thecanvas"></script> -->
@@ -47,30 +48,10 @@
 
 
   <body>
+
+    
    
-
-   <script type="text/javascript">
-  function filterProject(evt,projectType) {
-    var allProjects = Array.from(document.getElementsByClassName('project'));
-    var selectedProjects = Array.from(document.getElementsByClassName('project ' + projectType));
-    allProjects.forEach(function(e) {
-      e.style = "display: none";
-    });
-    selectedProjects.forEach(function(e) {
-      e.style = "display: block";
-    });
-
-      tablinks = Array.from(document.getElementsByClassName("tablink"));
-  tablinks.forEach(function(e) {
-      e.className = e.className.replace(" w3-red", "");
-    });
-  evt.currentTarget.className += " w3-red";
-  console.log(evt.currentTarget);
-  }
-
-</script>
-
-<header class="site-header" role="banner">
+   <header class="site-header" role="banner">
 
   
     
@@ -81,7 +62,7 @@
 
     <a rel="author" href="/">Home</a>
      <a rel="author" href="/about">About</a>
-     
+    
 
 
   
@@ -105,8 +86,7 @@
 
 
 
-
-
+   <div class="hidden">
 
     <img class = "splash" src="" alt="" title="">
 
@@ -157,6 +137,12 @@ body{
 
 
 
+
+  
+
+  
+
+  
 
   
 
@@ -2592,6 +2578,8 @@ body{
 
 </footer>
 
+
+  </div>
 
   </body>
 

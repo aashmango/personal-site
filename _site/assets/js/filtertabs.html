@@ -1,0 +1,18 @@
+
+  function filterProject(evt,projectType) {
+    var allProjects = Array.from(document.getElementsByClassName('project'));
+    var selectedProjects = Array.from(document.getElementsByClassName('project ' + projectType));
+    allProjects.forEach(function(e) {
+      e.style = "display: none";
+    });
+    selectedProjects.forEach(function(e) {
+      e.style = "display: block";
+    });
+
+      tablinks = Array.from(document.getElementsByClassName("tablink"));
+  tablinks.forEach(function(e) {
+      e.className = e.className.replace(" w3-red", "");
+    });
+  evt.currentTarget.className += " w3-red";
+  console.log(evt.currentTarget);
+  }
