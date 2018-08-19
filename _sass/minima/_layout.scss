@@ -124,10 +124,8 @@ display: block;
 
   @include media-query($on-palm) {
   display: block;
-  width: 355px;
-  height:355px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 20%;
+
   }
 }
 
@@ -147,6 +145,11 @@ display: block;
   color: black;
   transition: 0.2s;
   opacity: 1;
+
+  @include media-query($on-palm) {
+  background: none;
+
+  }
 }
 
 .thumbhover:hover #cropper {
@@ -307,7 +310,8 @@ transition: 0.2s;
     @include media-query($on-palm) {
       width: 100%;
       margin: 0px;
-      height: 700px;
+      padding: 5%;
+      height: 100px;
     }
 
     &:hover {
@@ -327,7 +331,7 @@ transition: 0.2s;
     margin-top: 5px;
 
      @include media-query($on-palm) {
-      @include relative-font-size(1.5);
+      @include relative-font-size(0.75);
       
     }
     }
@@ -352,7 +356,7 @@ letter-spacing: 1px;
 
 
  @include media-query($on-palm) {
-      @include relative-font-size(1.25);
+      @include relative-font-size(0.75);
       margin: auto;
     }
  
@@ -364,24 +368,9 @@ letter-spacing: 1px;
   letter-spacing: 1px;
   font-weight:$heavy-font-weight;
   @include media-query($on-palm) {
-      @include relative-font-size(2.5);
+      @include relative-font-size(1);
     }
 
-
-}
-
-.text-info {
-  text-align: left;
-  top:0;
-  position: absolute;
-  display: block;
-  opacity: 0;
-  width: 100%;
-  padding: 20px;
-  transition: 0.2s;
-    @include media-query($on-palm) {
-          height: auto;
-    }
 
 }
 
@@ -430,6 +419,26 @@ letter-spacing: 1px;
     }
   }
 }
+
+
+.text-info {
+  text-align: left;
+  top:0;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  padding: 20px;
+  transition: 0.2s;
+    @include media-query($on-palm) {
+          height: auto;
+          padding-left: 25%;
+          opacity: 1;
+          width: 60%;
+    }
+
+}
+
 
 #set {
   font-weight: 800;
