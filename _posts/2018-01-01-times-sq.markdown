@@ -6,9 +6,10 @@ info: "3D-printing a giant fresnel lens"
 date:   2018-01-01 15:20:19 -0500
 image: /assets/homepage_images/lens.png
 allimages: /assets/none
-
+type: "3D"
+gridstyle: "grid-item"
 categories:
-- Digital Fabrication |
+- Digital Fabrication
 - 3D printing
 ---
 

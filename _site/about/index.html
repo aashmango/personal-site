@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Begin Jekyll SEO tag v2.4.0 -->
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>About | Aashman Goghari</title>
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="About" />
@@ -19,7 +19,7 @@
 <meta property="og:url" content="http://localhost:4000/about/" />
 <meta property="og:site_name" content="Aashman Goghari" />
 <script type="application/ld+json">
-{"headline":"About","author":{"@type":"Person","name":"Personal Website"},"description":"This website is under development.","name":"Aashman Goghari","@type":"WebSite","url":"http://localhost:4000/about/","@context":"http://schema.org"}</script>
+{"name":"Aashman Goghari","description":"This website is under development.","author":{"@type":"Person","name":"Personal Website"},"@type":"WebSite","url":"http://localhost:4000/about/","headline":"About","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/main.css">
@@ -31,7 +31,8 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-
+<script src="/assets/js/masonry.pkgd.min.js"></script>
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
 <!--    <script type="text/javascript" src="/assets/js/paper-full.js"></script>
 
 <script type="text/paperscript" src="/assets/blobs.js" canvas="thecanvas"></script> -->
@@ -45,19 +46,40 @@
   <body>
    
 
-   <header class="site-header" role="banner">
+   <script type="text/javascript">
+  function filterProject(evt,projectType) {
+    var allProjects = Array.from(document.getElementsByClassName('project'));
+    var selectedProjects = Array.from(document.getElementsByClassName('project ' + projectType));
+    allProjects.forEach(function(e) {
+      e.style = "display: none";
+    });
+    selectedProjects.forEach(function(e) {
+      e.style = "display: block";
+    });
+
+      tablinks = Array.from(document.getElementsByClassName("tablink"));
+  tablinks.forEach(function(e) {
+      e.className = e.className.replace(" w3-red", "");
+    });
+  evt.currentTarget.className += " w3-red";
+  console.log(evt.currentTarget);
+  }
+
+</script>
+
+<header class="site-header" role="banner">
 
   
     
     
 
     <div class="site-title">
-  <!--   <a rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
-    <!-- <a class="site-title" rel="author" href="/"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
     <a rel="author" href="/">Home</a>
      <a rel="author" href="/about">About</a>
+     
+
 
   
   

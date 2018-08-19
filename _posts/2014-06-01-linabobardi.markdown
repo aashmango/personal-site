@@ -9,8 +9,10 @@ allimages: /assets/images/none
 headerimage: /assets/none
 color: "black"
 textcolor: "white"
+type: "2D"
+gridstyle: "grid-item"
 categories:
-- Graphic Design |
+- Graphic Design
 - Architectural Drawing
 ---
 

@@ -7,10 +7,13 @@ date:   2015-12-01 15:20:19 -0500
 image: /assets/images/computing/thumb.png
 allimages: /assets/none
 headerimage: /assets/images/computing/cropbg.jpg
+type: "2D"
+gridstyle: "grid-item"
 categories:
-- Drawing |
-- Computation |
+- Drawing
+- Computation
 - Writing
+type: "2D"
 ---
 
 This project is from an architectural studio devoted to exploring means of computational drawing within the realm of architecture. Concepts of organization, heirarchy and craft arise throughout this inquiry. The work is plotted on an 80’s pen plotter (CNC) which provides a manual vectorized quality otherwise unseen with conventional forms of production  (pixels + laser printing).

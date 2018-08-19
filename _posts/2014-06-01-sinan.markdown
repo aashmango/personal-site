@@ -8,8 +8,10 @@ image: /assets/homepage_images/suleymaniye.png
 allimages: /assets/images/none
 color: "#232323"
 textcolor: "white"
+type: "2D"
+gridstyle: "grid-item"
 categories:
-- Graphic Design |
+- Graphic Design
 - Architectural Drawing
 ---
 

@@ -1,6 +1,6 @@
-<li>
-        
+<li class="project {{ post.type }}"> 
         <a class = "thumbhover" href="{{ post.url | relative_url }}">
+    
 
            <div id="cropper">
         <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}" title="{{ post.title }}">
@@ -11,11 +11,13 @@
               {{ post.title | escape }}
               </span>
             </h2>
-            <span class="post-category">{% for category in post.categories %}
-            {{ category }}
-            {% endfor %}</span> 
+            <span class="post-category">
+            {{ post.categories|join:" | " }}
+            </span> 
             <h4>{{ post.info }} </h4>
           </div>
           
          </a>
       </li>
+
+      

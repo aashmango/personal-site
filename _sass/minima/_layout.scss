@@ -20,7 +20,6 @@
   width: 100%;
   z-index: 25;
 
-  
 }
 
 .site-title a{
@@ -50,15 +49,11 @@ font-weight: 800;
 
 
 
-
-
 .filters {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-top: 40px;
     font-weight: $heavy-font-weight;
-
     @include media-query($on-palm) {
     display: block;
     margin-right: auto;
@@ -73,27 +68,8 @@ font-weight: 800;
 > li a {
     display: block;
     color: black;
-    padding: 8px 16px;
     text-decoration: none;
 }
-
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  cursor: pointer;
-  float: right;
-  font-weight: $heavy-font-weight;
-  
-}
-
-.active {
-    border-bottom: 2px solid black;
-    color: black;
-}
-
-
 
 }
 
@@ -108,7 +84,7 @@ a.bigbutton:link, a.bigbutton:visited {
     margin-bottom: 25px;
     display: inherit;
     font-weight: $heavy-font-weight;
-    transition: 0.5s;
+    transition: 0.2s;
 
 }
 
@@ -116,7 +92,93 @@ a.bigbutton:link, a.bigbutton:visited {
 a.bigbutton:hover, a.bigbutton:active {
     background-color: #6741FF;
     color: white;
-    transition: 0.5s;
+    transition: 0.2s;
+}
+
+
+/**
+ * Images
+ */
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+
+}
+
+video {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  width: 100%;
+}
+
+#cropper {
+  width: 100%;
+  border-radius:50%;
+  overflow: hidden;
+  position: relative;
+  border: 0px solid black;
+  transition: 0.2s;
+
+  @include media-query($on-palm) {
+  display: block;
+  width: 355px;
+  height:355px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+.thumbhover {
+  transition: 0.2s;
+}
+
+.thumbhover:hover {
+  transition: 0.2s;
+  cursor:crosshair;
+}
+
+.thumbhover:hover .text-info{
+  display: block;
+  z-index: 101;
+  background: yellow;
+  color: black;
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.thumbhover:hover #cropper {
+-webkit-transform: scale(1.1); 
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+z-index: 100;
+transition: 0.2s;
+}
+
+
+
+
+.splash {
+  margin-top: -75px;
+}
+
+.headshot {
+  width: 200px;
+  border-radius:50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 80px;
+  border: 0px solid black;
+
+  @include media-query($on-palm) {
+  float: none;
+  width: 100%;
+
+  }
+  
 }
 
 /**
@@ -226,9 +288,6 @@ a.bigbutton:hover, a.bigbutton:active {
 
 }
 
-
-
-
 .post-list-heading {
   @include relative-font-size(1.75);
 }
@@ -236,15 +295,14 @@ a.bigbutton:hover, a.bigbutton:active {
 .post-list {
   margin-left: 0;
   list-style: none;
+  position: relative;
 
 
   > li {
     margin: 4.6%;
     width: 24%;
     float: left;
-    height: 450px;
-
-
+    position: relative;
 
     @include media-query($on-palm) {
       width: 100%;
@@ -266,7 +324,7 @@ a.bigbutton:hover, a.bigbutton:active {
     }
 
     h4 {
-    margin-top: 10px;
+    margin-top: 5px;
 
      @include media-query($on-palm) {
       @include relative-font-size(1.5);
@@ -283,8 +341,6 @@ a.bigbutton:hover, a.bigbutton:active {
   font-size: $small-font-size;
   color: $grey-color;
 
-
-
 }
 
 .post-category {
@@ -299,10 +355,7 @@ letter-spacing: 1px;
       @include relative-font-size(1.25);
       margin: auto;
     }
-
-
-
-  
+ 
 }
 
 .post-link {
@@ -310,8 +363,6 @@ letter-spacing: 1px;
   @include relative-font-size(1.5);
   letter-spacing: 1px;
   font-weight:$heavy-font-weight;
-  padding-top: $spacing-unit;
-
   @include media-query($on-palm) {
       @include relative-font-size(2.5);
     }
@@ -320,12 +371,16 @@ letter-spacing: 1px;
 }
 
 .text-info {
-  height: 150px;
-  text-align: center;
-
+  text-align: left;
+  top:0;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  padding: 20px;
+  transition: 0.2s;
     @include media-query($on-palm) {
-      height: auto;
-      
+          height: auto;
     }
 
 }
@@ -370,7 +425,6 @@ letter-spacing: 1px;
 
   h4 {
     @include relative-font-size(1.25);
-
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
@@ -380,3 +434,17 @@ letter-spacing: 1px;
 #set {
   font-weight: 800;
 }
+
+.w3-red {
+  background: #D8D8D8;
+}
+
+/**
+ * MASONRY STYLING
+ */
+
+.grid-item { width: 50px; }
+.grid-item--width2 { width: 200px; }
+
+
+

@@ -6,9 +6,11 @@ info: "Moving the center of mass of a volume of wood."
 date:   2014-06-01 15:20:19 -0500
 image: /assets/homepage_images/balance.png
 allimages: /assets/images/centroid/
+gridstyle: "grid-item"
 categories:
-- Digital Fabrication |
+- Digital Fabrication
 - Laser Cutting
+type: "3D"
 ---
 
 

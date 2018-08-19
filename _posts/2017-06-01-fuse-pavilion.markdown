@@ -7,8 +7,10 @@ date:   2017-06-01 15:20:19 -0500
 image: /assets/homepage_images/pavilion.png
 headerimage: /assets/images/pavilion/cover.jpg
 allimages: /assets/images/pavilion
+type: "3D"
+gridstyle: "grid-item"
 categories:
-- Parametric Design |
+- Parametric Design
 - 3D Printing 
 ---
 

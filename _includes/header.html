@@ -1,3 +1,24 @@
+<script type="text/javascript">
+  function filterProject(evt,projectType) {
+    var allProjects = Array.from(document.getElementsByClassName('project'));
+    var selectedProjects = Array.from(document.getElementsByClassName('project ' + projectType));
+    allProjects.forEach(function(e) {
+      e.style = "display: none";
+    });
+    selectedProjects.forEach(function(e) {
+      e.style = "display: block";
+    });
+
+      tablinks = Array.from(document.getElementsByClassName("tablink"));
+  tablinks.forEach(function(e) {
+      e.className = e.className.replace(" w3-red", "");
+    });
+  evt.currentTarget.className += " w3-red";
+  console.log(evt.currentTarget);
+  }
+
+</script>
+
 <header class="site-header" role="banner">
 
   
@@ -5,12 +26,19 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     <div class="site-title">
-  <!--   <a rel="author" href="{{ "/" | relative_url }}"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
-    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img class="homeicon" src="/assets/homeicon.svg"></a> -->
 
     <a rel="author" href="{{ "/" | relative_url }}">Home</a>
      <a rel="author" href="/about">About</a>
+     {% if page.layout == "home" %}
+
+    <ul class="filters">   
+    <li><a class="tablink w3-red" href="#" onclick="filterProject(event,'')">All</a></li>
+    <li><a class="tablink" href="#" onclick="filterProject(event,'2D')">2D</a></li>
+    <li><a class="tablink" href="#" onclick="filterProject(event,'3D')">3D</a></li>
+        </ul>
+    {% endif %}
+
 
   {% if page.previous.url %}
     

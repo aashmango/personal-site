@@ -8,9 +8,11 @@ image: /assets/homepage_images/manual.png
 allimages: /assets/images/cure-manual
 color: "#417EFF"
 textcolor: "white"
+type: "2D"
+gridstyle: "grid-item"
 
 categories:
-- Drawing |
+- Drawing
 - Graphic Design
 ---
 
