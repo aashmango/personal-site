@@ -8,7 +8,7 @@ function filterProject(evt,projectType) {
   });
 
   $.each( selectedProjects, function( index, value ){
-    value.style = "display: block;opacity: 0;"
+    value.style = "display: block;opacity: 0"
     $(value).delay(50).animate({opacity:'1',bottom: '20px'},500);
 });
 
