@@ -73,7 +73,7 @@ div.hidden { opacity: 0; }
 
 .splash { height: auto; }
 
-.site-title { position: fixed; width: 100%; z-index: 25; }
+.site-title { position: fixed; width: 100%; z-index: 150; border-bottom: 2px solid black; background: white; }
 
 .site-title a { float: left; padding: 20px; font-weight: 800; }
 
@@ -98,14 +98,14 @@ img { max-width: 100%; vertical-align: middle; }
 video { display: block; margin-left: auto; margin-right: auto; padding-top: 30px; width: 100%; }
 
 #cropper { width: 100%; border-radius: 50%; overflow: hidden; position: relative; border: 0px solid black; transition: 0.2s; }
-@media screen and (max-width: 600px) { #cropper { display: block; width: 20%; } }
+@media screen and (max-width: 600px) { #cropper { width: 20%; position: static; float: left; overflow: visible; } }
 
 .thumbhover { transition: 0.2s; }
 
 .thumbhover:hover { transition: 0.2s; cursor: crosshair; }
 
-.thumbhover:hover .text-info { display: block; z-index: 101; background: yellow; color: black; transition: 0.2s; opacity: 1; }
-@media screen and (max-width: 600px) { .thumbhover:hover .text-info { background: none; } }
+.thumbhover:hover .text-info { display: block; z-index: 110; background: white; color: black; transition: 0.2s; opacity: 1; border: 2px solid black; }
+@media screen and (max-width: 600px) { .thumbhover:hover .text-info { height: auto; opacity: 1; border: 0px solid; } }
 
 .thumbhover:hover #cropper { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); z-index: 100; transition: 0.2s; }
 
@@ -115,7 +115,7 @@ video { display: block; margin-left: auto; margin-right: auto; padding-top: 30px
 @media screen and (max-width: 600px) { .headshot { float: none; width: 100%; } }
 
 /** Site footer */
-.site-footer { border-top: 4px solid black; padding: 30px 0; }
+.site-footer { border-top: 2px solid black; padding: 30px 0; background: white; }
 
 .footer-heading { font-size: 18px; margin-bottom: 15px; }
 
@@ -148,7 +148,7 @@ video { display: block; margin-left: auto; margin-right: auto; padding-top: 30px
 
 .post-list { margin-left: 0; list-style: none; position: relative; }
 .post-list > li { margin: 4.6%; width: 24%; float: left; position: relative; }
-@media screen and (max-width: 600px) { .post-list > li { width: 100%; margin: 0px; padding: 5%; height: 100px; } }
+@media screen and (max-width: 600px) { .post-list > li { width: 100%; margin: 0px; padding-bottom: 20px; padding-top: 20px; border-bottom: 1px solid #2e2e2e; } }
 .post-list > li > a > .text-info > h2 { margin-bottom: 0px; }
 .post-list > li > a > .text-info h4 { margin-top: 5px; }
 @media screen and (max-width: 600px) { .post-list > li > a > .text-info h4 { font-size: 12px; } }
@@ -176,7 +176,7 @@ video { display: block; margin-left: auto; margin-right: auto; padding-top: 30px
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
 .text-info { text-align: left; top: 0; position: absolute; display: block; opacity: 0; width: 100%; padding: 20px; transition: 0.2s; }
-@media screen and (max-width: 600px) { .text-info { height: auto; padding-left: 25%; opacity: 1; width: 60%; } }
+@media screen and (max-width: 600px) { .text-info { position: static; opacity: 1; width: 50%; float: left; padding: 0px; padding-left: 20px; } }
 
 #set { font-weight: 800; }
 

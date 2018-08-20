@@ -18,7 +18,9 @@
 .site-title {
   position: fixed;
   width: 100%;
-  z-index: 25;
+  z-index: 150;
+  border-bottom: 2px solid black;
+  background: white;
 
 }
 
@@ -123,8 +125,10 @@ display: block;
   transition: 0.2s;
 
   @include media-query($on-palm) {
-  display: block;
   width: 20%;
+  position: static;
+  float: left;
+  overflow: visible;
 
   }
 }
@@ -140,14 +144,18 @@ display: block;
 
 .thumbhover:hover .text-info{
   display: block;
-  z-index: 101;
-  background: yellow;
+  z-index: 110;
+  background: white;
   color: black;
   transition: 0.2s;
   opacity: 1;
+  border: 2px solid black;
 
   @include media-query($on-palm) {
-  background: none;
+    height: auto;
+    opacity: 1;
+    border: 0px solid;
+
 
   }
 }
@@ -188,8 +196,9 @@ transition: 0.2s;
  * Site footer
  */
 .site-footer {
-  border-top: 4px solid black;
+  border-top: 2px solid black;
   padding: $spacing-unit 0;
+  background: white;
 }
 
 .footer-heading {
@@ -310,8 +319,9 @@ transition: 0.2s;
     @include media-query($on-palm) {
       width: 100%;
       margin: 0px;
-      padding: 5%;
-      height: 100px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border-bottom: 1px solid #2e2e2e;
     }
 
     &:hover {
@@ -381,6 +391,7 @@ letter-spacing: 1px;
  */
 .post-header {
   margin-bottom: $spacing-unit;
+
 }
 
 .post-title {
@@ -431,10 +442,12 @@ letter-spacing: 1px;
   padding: 20px;
   transition: 0.2s;
     @include media-query($on-palm) {
-          height: auto;
-          padding-left: 25%;
+          position: static;
           opacity: 1;
-          width: 60%;
+          width: 50%;
+          float: left;
+          padding: 0px;
+          padding-left: 20px;
     }
 
 }
