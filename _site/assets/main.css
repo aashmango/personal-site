@@ -115,7 +115,7 @@ video { display: block; margin-left: auto; margin-right: auto; padding-top: 30px
 @media screen and (max-width: 600px) { .headshot { float: none; width: 100%; } }
 
 /** Site footer */
-.site-footer { border-top: 4px solid #6741FF; padding: 30px 0; }
+.site-footer { border-top: 4px solid black; padding: 30px 0; }
 
 .footer-heading { font-size: 18px; margin-bottom: 15px; }
 
